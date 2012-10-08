@@ -28,10 +28,10 @@
     <name>Comercio</name>
     <description></description>
     <!--
-                                                  		<organization>
-                                                                                                 			<name>company name</name>
-                                                                                                 			<url>company url</url>
-                                                  		</organization>
+                                                          		<organization>
+                                                                                                                 			<name>company name</name>
+                                                                                                                 			<url>company url</url>
+                                                          		</organization>
    	-->
     <licenses>
         <license>
@@ -55,9 +55,9 @@
         </dependency>
         <!-- OPTIONAL DEPENDENCY
       		<dependency>
-                                                     			<groupId>org.apache.wicket</groupId>
-                                                     			<artifactId>wicket-extensions</artifactId>
-                                                     			<version>${wicket.version}</version>
+                                                             			<groupId>org.apache.wicket</groupId>
+                                                             			<artifactId>wicket-extensions</artifactId>
+                                                             			<version>${wicket.version}</version>
       		</dependency>
       		-->
 
@@ -103,6 +103,11 @@
             <groupId>org.apache.cayenne</groupId>
             <artifactId>cayenne-client</artifactId>
             <version>3.1B1</version>
+        </dependency>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901.jdbc4</version>
         </dependency>
     </dependencies>
     <build>

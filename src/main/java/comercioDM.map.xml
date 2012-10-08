@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-map xmlns="http://cayenne.apache.org/schema/3.0/modelMap"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://cayenne.apache.org/schema/3.0/modelMap http://cayenne.apache.org/schema/3.0/modelMap.xsd"
+	 project-version="6">
+	<property name="defaultPackage" value="com.arsisec.model"/>
+	<property name="defaultSchema" value="comercio"/>
+	<db-entity name="p_persona" schema="comercio">
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true" length="10"/>
+		<db-attribute name="nombre" type="VARCHAR" isMandatory="true" length="255"/>
+		<db-key-generator>
+			<db-generator-type>ORACLE</db-generator-type>
+			<db-generator-name>p_persona_id_seq</db-generator-name>
+		</db-key-generator>
+	</db-entity>
+	<obj-entity name="PPersona" className="com.arsisec.model.PPersona" dbEntityName="p_persona">
+		<obj-attribute name="nombre" type="java.lang.String" db-attribute-path="nombre"/>
+	</obj-entity>
+</data-map>
